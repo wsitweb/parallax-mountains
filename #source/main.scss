@@ -61,3 +61,13 @@ html, body{
         }
     }
 }
+::-webkit-scrollbar{
+    width: 14px;
+}
+::-webkit-scrollbar-track {
+    background: #7A7A7A;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+}
