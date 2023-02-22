@@ -1,3 +1,7 @@
+:root {
+  --index-size: calc(1vh+1vw);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -7,6 +11,10 @@
 html, body {
   width: 100%;
   height: 100%;
+}
+
+.wrapper {
+  max-width: 1200px;
 }
 
 .page {
@@ -52,8 +60,17 @@ html, body {
   margin: 0 auto;
 }
 .content__image {
+  max-width: calc(var(--index-size) * 60);
   width: 100%;
-  margin-bottom: 10vh;
+  padding-bottom: calc(var(--index-size) * 30);
+  margin: 0 auto;
+  display: block;
+}
+.content__image::before {
+  content: "";
+  width: 10px;
+  height: 100vh;
+  background: #7A7A7A;
 }
 .content__article {
   background-color: rgba(255, 255, 255, 0.5);
