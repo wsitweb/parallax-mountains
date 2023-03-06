@@ -32,4 +32,10 @@ window.addEventListener('scroll',function(event) {
     elementMontainAfterOne.style.transform = `translate3d(${translate3dElements}px, 0, 0) scale(${scaleElementsSlowTwo})`;
     elementMontainAfterTwo.style.transform = `translate3d(${translate3dElementsTwo}px, 0, 0) scale(${scaleElementsSlowThre})`;
 });
-console.log();
+const appHeight = () => {
+    const doc = document.documentElement
+    doc.style.setProperty('--app-height', `${window.screen.height}px`);
+}
+
+window.addEventListener('resize', appHeight)
+appHeight()
